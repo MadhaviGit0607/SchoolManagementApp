@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Teacher App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container d-flex flext-column justify-content-center">
+        <header>
+            <h1>Student Teacher App</h1>
+        </header>
+
+        <section id="auth">
+            <div class="auth-form">
+                <h2>Login</h2>
+                <form id="loginForm1">
+                    <label for="loginUsername">Teacher_id:</label>
+                    <input type="text" id="loginUsername" required>
+                    
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" required>
+                    
+                    <button class="btn btn-primary" type="submit">Login</button>
+                </form>
+                <p id="loginMessage"></p>
+            </div>
+
+            <div class="auth-form">
+        
+                <form id="loginForm2">
+                    <label for="loginUsername">Student_id</label>:</label>
+                    <input type="text" id="loginUsername" required>
+                    
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" required>
+                    
+                    <button class="btn btn-primary" type="submit">Login</button>
+                </form>
+                <p id="loginMessage"></p>
+            </div>
+        </section>
+
+        <section id="data" style="display: none;">
+            <h2>Student List</h2>
+            <ul id="studentList"></ul>
+            <h2>Add Student</h2>
+            <form id="addStudentForm">
+                <label for="studentName">Name:</label>
+                <input type="text" id="studentName" required>
+                
+                <label for="studentAge">Age:</label>
+                <input type="number" id="studentAge" required>
+                
+                <label for="studentGrade">Grade:</label>
+                <input type="text" id="studentGrade" required>
+                
+                <button type="submit">Add Student</button>
+            </form>
+            <p id="addStudentMessage"></p>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
